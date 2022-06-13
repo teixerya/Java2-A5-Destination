@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="800.0" 
+            styleClass="main-DestFXML" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="DestinationPack.FXMLMainMenuController">
+  
+    
+    <stylesheets>
+        <URL value="@CSSMainMenu.css"/>
+    </stylesheets>
+
+        <MenuBar id="menu-button" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+            <Menu text="Home">
+                <items>
+                    <MenuItem text="Open" onAction="#openApp"/>
+                  
+                </items>
+                <items>
+                    <MenuItem text="About" onAction="#showAbout" />
+                </items>
+            </Menu>
+
+        </MenuBar>
+        
+        <Label text="Welcome to My Trip History" fx:id="myDestination" id="titleForDestination" 
+               alignment="CENTER"  AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" 
+               AnchorPane.topAnchor="200" AnchorPane.bottomAnchor="400" 
+               maxWidth="2"  />
+
+</AnchorPane>
+

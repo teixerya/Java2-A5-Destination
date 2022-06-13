@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1800.0" prefWidth="600.0" 
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="DestinationPack.DController">
+    
+    <SplitPane>
+        <items>
+            <VBox>
+                <Label text="Enter Destination Name"/>
+                <TextField fx:id="txtDestName"/>
+            
+                <Label text="Duration of Stay"/>
+                <TextField fx:id="txtDuration"/>    
+            
+                <Label text="Airline flown with"/>
+                <TextField fx:id="txtAirline"/>    
+
+                <Label text="Year"/>
+                <TextField fx:id="txtYear" text=""/>                    
+                
+                <Label text="Comment"/>
+                <TextField fx:id="txtComment"/>           
+                
+ 
+                                
+                <Button text="Add to the list" onAction="#btnAdd"/> 
+
+                <Button text="Remove item" onAction="#removeItem"/> 
+                 
+                <Button text="clear cart" onAction="#btnClear"/>
+                  
+
+                 
+                <VBox>
+                    <Button text="Save to file" onAction="#btnSave"/>   
+                    
+                    <Button text="Edit Record" onAction="#btnEdit"/>
+                    
+                    <Button fx:id="btnOpen" text="Open a file" onAction="#btnOpen"/>
+                 
+                    <Button text="Delete Record" onAction="#btnDelete"/>
+                    
+                    <Button text="About Us" onAction="#btnAbout"/>
+                    
+                </VBox>
+           
+                <VBox> 
+                    
+                 <Button text="First Record" onAction="#btnFirst"/>  
+                 <Button text="Last Record" onAction="#btnLast"/>
+                  
+                 <Button text="Next Record" onAction="#btnNext"/>
+                 
+                 
+                 <Button text="Previous Record" onAction="#btnPrev"/>
+                 
+                 
+
+                 </VBox>
+
+                 
+                  <Button text="close" onAction="#handleButtonClose" fx:id="btnClose"/>
+                
+            </VBox>
+        </items>
+        
+        <items>
+            <ListView fx:id="userRecordList"/>
+        </items>
+            
+    </SplitPane>
+        
+</AnchorPane>
